@@ -83,7 +83,6 @@ public class IRSonyFactory
         return new IRMessage(IRMessage.FREQ_40_KHZ,finalCode);
     }
 
-
     private static List<Integer> decodeInt(int num, int bits)
     {
         List<Integer> values = new ArrayList<>();

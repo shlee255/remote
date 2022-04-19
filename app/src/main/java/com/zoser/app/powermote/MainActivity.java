@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     private Vibrator _vibrator = null;
 
     private long _lastBurstTime = 0;     // Microsecconds
-    private long _waitTime = 315000;     // Microsecconds
-    private long _waitTimeMax = 1000000; // Microsecconds
-    private long _waitTimeMin = 300000;  // Microsecconds
+    private long _waitTime = 315000;     // Microsecconds 0.315s
+    private long _waitTimeMax = 1000000; // Microsecconds     1s
+    private long _waitTimeMin = 300000;  // Microsecconds   0.3s
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -62,13 +62,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         _button[4] =  createIRButton("HDMI 2",R.drawable.icon_09,_rows[1],new IRMessageRequest(IRMessages.HDMI_SPLITTER_SET_2));
         _button[5] =  createIRButton("HTPC",R.drawable.icon_10,_rows[1],new IRMessageRequest(IRMessages.HDMI_SPLITTER_SET_3));
 
-        _button[6] =  createIRButton("VOLUME UP",R.drawable.icon_02,_rows[2],new IRMessageRequest(IRMessages.HOME_LG_TV_VOLUME_UP));
+        _button[6] =  createIRButton("VOLUME UP",R.drawable.icon_02,_rows[2],new IRMessageRequest(IRMessages.KONKA_VOLUME_UP));
         _button[7] =  createIRButton("CHROMECAST",R.drawable.icon_06,_rows[2],new IRMessageRequest(IRMessages.HDMI_SPLITTER_SET_5));
-        _button[8] =  createIRButton("VOLUME UP",R.drawable.icon_02,_rows[2],new IRMessageRequest(IRMessages.HOME_SONY_HT_VOLUME_UP));
+        _button[8] =  createIRButton("VOLUME UP",R.drawable.icon_02,_rows[2],new IRMessageRequest(IRMessages.KONKA_CHANNEL_UP));
 
-        _button[9] =  createIRButton("VOLUME DOWN",R.drawable.icon_08,_rows[3],new IRMessageRequest(IRMessages.HOME_LG_TV_VOLUME_DOWN));
+        _button[9] =  createIRButton("VOLUME DOWN",R.drawable.icon_08,_rows[3],new IRMessageRequest(IRMessages.KONKA_VOLUME_DOWN));
         _button[10] =  createIRButton("SWITCH",R.drawable.icon_07,_rows[3],new IRMessageRequest(IRMessages.HDMI_SPLITTER_SET_4));
-        _button[11] =  createIRButton("VOLUME DOWN",R.drawable.icon_08,_rows[3],new IRMessageRequest(IRMessages.HOME_SONY_HT_VOLUME_DOWN));
+        _button[11] =  createIRButton("VOLUME DOWN",R.drawable.icon_08,_rows[3],new IRMessageRequest(IRMessages.KONKA_CHANNEL_DOWN));
 
         _lastBurstTime = System.nanoTime();
 
@@ -142,6 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     {
         _waitTime = Math.max(_waitTime,_waitTimeMin);
         _waitTime = Math.min(_waitTime,_waitTimeMax);
+        // _waitTime = 2000;
 
         if((System.nanoTime() - _lastBurstTime) > (_waitTime * 1000))
         {

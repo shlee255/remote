@@ -24,6 +24,13 @@ public class IRMessages
     public static IRMessage HOME_LG_TV_VOLUME_UP;
     public static IRMessage HOME_LG_TV_VOLUME_DOWN;
 
+    // Konka
+    public static IRMessage KONKA_CHANNEL_UP;
+    public static IRMessage KONKA_CHANNEL_DOWN;
+    public static IRMessage KONKA_VOLUME_UP;
+    public static IRMessage KONKA_VOLUME_DOWN;
+
+
     public static void initialize()
     {
         // MISC
@@ -49,5 +56,11 @@ public class IRMessages
         HDMI_SPLITTER_SET_3 = IRNecFactory.create(168,0,0);
         HDMI_SPLITTER_SET_4 = IRNecFactory.create(144,0,0);
         HDMI_SPLITTER_SET_5 = IRNecFactory.create(152,0,0);
+
+        KONKA_CHANNEL_UP = IRKonkaFactory.create(0x0211,0);
+        KONKA_CHANNEL_DOWN = IRKonkaFactory.create(0x0210,0);
+        KONKA_VOLUME_UP = IRKonkaFactory.create(0x0213,0);
+        KONKA_VOLUME_DOWN = IRKonkaFactory.create(0x0212,0);
+
     }
 }
