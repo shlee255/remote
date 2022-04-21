@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         _button[23] =  createIRButton("CHANNEL",R.drawable.icon_02,_rows[5], new IRMessageRequest(IRMessages.KONKA_CHANNEL_UP));
 
         _button[24] =  createIRButton("VOLUME",R.drawable.icon_08,_rows[6],new IRMessageRequest(IRMessages.KONKA_VOLUME_DOWN));
-        _button[25] =  createIRButton("",R.drawable.icon_03,_rows[6],new IRMessageRequest(IRMessages.KONKA_02));
+        _button[25] =  createIRButton("Home",R.drawable.icon_03,_rows[6],new IRMessageRequest(IRMessages.KONKA_HOME));
         _button[26] =  createIRButton("",R.drawable.icon_04,_rows[6],new IRMessageRequest(IRMessages.KONKA_00));
         _button[27] =  createIRButton("CHANNEL",R.drawable.icon_08,_rows[6],new IRMessageRequest(IRMessages.KONKA_CHANNEL_DOWN));
 
@@ -190,7 +190,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         {
             int ev = event.getActionMasked();
 
-            if(ev == MotionEvent.ACTION_MOVE)
+            // if(ev == MotionEvent.ACTION_MOVE)
+            if(ev == MotionEvent.ACTION_DOWN)
             {
                 _lastBurstTime = System.nanoTime();
 
