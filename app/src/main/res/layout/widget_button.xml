@@ -36,11 +36,11 @@
             android:id="@+id/text_title"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:gravity="center_horizontal"
             android:layout_alignParentBottom="true"
             android:layout_weight="0.2"
+            android:gravity="center_horizontal"
             android:text="VOLUME UP"
-            android:textSize="12sp"
-            android:textColor="@color/remote_text"/>
+            android:textColor="@color/remote_text"
+            android:textSize="10sp" />
     </LinearLayout>
 </RelativeLayout>
