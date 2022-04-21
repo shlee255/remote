@@ -139,6 +139,8 @@ public class IRMessages
         KONKA_07 = IRKonkaFactory.create(0x0207,0);
         KONKA_08 = IRKonkaFactory.create(0x0208,0);
         KONKA_09 = IRKonkaFactory.create(0x0209,0);
+
+
         KONKA_10 = IRKonkaFactory.create(0x0236,0);
         KONKA_11 = IRKonkaFactory.create(0x0237,0);
 

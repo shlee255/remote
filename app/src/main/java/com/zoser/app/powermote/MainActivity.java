@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         _button[24] =  createIRButton("VOLUME",R.drawable.icon_08,_rows[6],new IRMessageRequest(IRMessages.KONKA_VOLUME_DOWN));
         _button[25] =  createIRButton("Home",R.drawable.icon_03,_rows[6],new IRMessageRequest(IRMessages.KONKA_HOME));
-        _button[26] =  createIRButton("",R.drawable.icon_04,_rows[6],new IRMessageRequest(IRMessages.KONKA_00));
+        _button[26] =  createIRButton("Power",R.drawable.icon_04,_rows[6],new IRMessageRequest(IRMessages.KONKA_POWER));
         _button[27] =  createIRButton("CHANNEL",R.drawable.icon_08,_rows[6],new IRMessageRequest(IRMessages.KONKA_CHANNEL_DOWN));
 
         _button[28] =  createIRButton("RED",   R.drawable.icon_04,_rows[7],new IRMessageRequest(IRMessages.KONKA_01));
