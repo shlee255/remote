@@ -13,7 +13,7 @@ public class IRKonkaFactory
     public static final int ZERO_SPACE  = 1500;
 
     public static final int SPACE_END1 = 4000;
-    public static final int SPACE_END2 = 23300;
+    public static final int SPACE_END2 = 233000;
 
     public static IRMessage create(int command, int repeats)
     {

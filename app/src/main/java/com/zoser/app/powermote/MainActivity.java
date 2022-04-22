@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
                 if(v == _buttonPowerAll)
                 {
-                    _waitTime = sendIRMessage(new IRMessageRequest(IRMessages.HDMI_SPLITTER_ON, IRMessages.HOME_LG_TV_ON, IRMessages.HOME_SONY_HT_ON));
+                    _waitTime = sendIRMessage(new IRMessageRequest(IRMessages.KONKA_09, IRMessages.KONKA_09, IRMessages.KONKA_OK));
                 }
                 else
                 {
