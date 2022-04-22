@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         _button[5] =   createIRButton("6",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_06));
         _button[6] =   createIRButton("7",R.drawable.icon_01,_rows[1], new IRMessageRequest(IRMessages.KONKA_07));
         _button[7] =   createIRButton("8",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_08));
-        _button[8] =   createIRButton("TV",R.drawable.icon_03,_rows[2],new IRMessageRequest(IRMessages.KONKA_TV));
+        _button[8] =   createIRButton("DTV",R.drawable.icon_03,_rows[2],new IRMessageRequest(IRMessages.KONKA_DTV));
         _button[9] =   createIRButton("9",R.drawable.icon_01,_rows[2], new IRMessageRequest(IRMessages.KONKA_09));
         _button[10] =  createIRButton("0",R.drawable.icon_01,_rows[2],new IRMessageRequest(IRMessages.KONKA_00));
         _button[11] =  createIRButton("HTMI",R.drawable.icon_03,_rows[2],new IRMessageRequest(IRMessages.KONKA_HDMI));
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         _button[12] =  createIRButton("EPS",R.drawable.icon_04,_rows[3], new IRMessageRequest(IRMessages.KONKA_EPS));
         _button[13] =  createIRButton("^",R.drawable.icon_01,_rows[3],new IRMessageRequest(IRMessages.KONKA_UP));
         _button[14] =  createIRButton("Menu",R.drawable.icon_04,_rows[3], new IRMessageRequest(IRMessages.KONKA_MENU));
-        _button[15] =  createIRButton("Audio",R.drawable.icon_01,_rows[3],new IRMessageRequest(IRMessages.KONKA_AUDIO));
+        _button[15] =  createIRButton("Audio",R.drawable.icon_01,_rows[3],new IRMessageRequest(IRMessages.KONKA_MTS));
 
         _button[16] =  createIRButton("<",R.drawable.icon_02,_rows[4],new IRMessageRequest(IRMessages.KONKA_LEFT));
         _button[17] =  createIRButton("OK",R.drawable.icon_04,_rows[4], new IRMessageRequest(IRMessages.KONKA_OK));
@@ -83,13 +83,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         _button[23] =  createIRButton("CHANNEL",R.drawable.icon_02,_rows[5], new IRMessageRequest(IRMessages.KONKA_CHANNEL_UP));
 
         _button[24] =  createIRButton("VOLUME",R.drawable.icon_08,_rows[6],new IRMessageRequest(IRMessages.KONKA_VOLUME_DOWN));
-        _button[25] =  createIRButton("Home",R.drawable.icon_03,_rows[6],new IRMessageRequest(IRMessages.KONKA_HOME));
+        _button[25] =  createIRButton("ATV",R.drawable.icon_03,_rows[6],new IRMessageRequest(IRMessages.KONKA_ATV));
         _button[26] =  createIRButton("Power",R.drawable.icon_04,_rows[6],new IRMessageRequest(IRMessages.KONKA_POWER));
         _button[27] =  createIRButton("CHANNEL",R.drawable.icon_08,_rows[6],new IRMessageRequest(IRMessages.KONKA_CHANNEL_DOWN));
 
-        _button[28] =  createIRButton("RED",   R.drawable.icon_04,_rows[7],new IRMessageRequest(IRMessages.KONKA_01));
-        _button[29] =  createIRButton("GREEN", R.drawable.icon_04,_rows[7],new IRMessageRequest(IRMessages.KONKA_02));
-        _button[30] =  createIRButton("YELLOW",R.drawable.icon_04,_rows[7],new IRMessageRequest(IRMessages.KONKA_00));
+        _button[28] =  createIRButton("RED",   R.drawable.icon_04,_rows[7],new IRMessageRequest(IRMessages.KONKA_RED));
+        _button[29] =  createIRButton("GREEN", R.drawable.icon_04,_rows[7],new IRMessageRequest(IRMessages.KONKA_GREEN));
+        _button[30] =  createIRButton("YELLOW",R.drawable.icon_04,_rows[7],new IRMessageRequest(IRMessages.KONKA_YELLOW));
         _button[31] =  createIRButton("BLUE",  R.drawable.icon_04,_rows[7],new IRMessageRequest(IRMessages.KONKA_BLUE));
 
 /*
