@@ -54,18 +54,22 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         _buttonPowerAll = (ImageButton) findViewById(R.id.id_Button_ALL);
 
-        _button[0] =   createIRButton("1",R.drawable.icon_01,_rows[0], new IRMessageRequest(IRMessages.KONKA_01));
-        _button[1] =   createIRButton("2",R.drawable.icon_01,_rows[0],new IRMessageRequest(IRMessages.KONKA_02));
-        _button[2] =   createIRButton("3",R.drawable.icon_01,_rows[0],new IRMessageRequest(IRMessages.KONKA_03));
-        _button[3] =   createIRButton("4",R.drawable.icon_01,_rows[0], new IRMessageRequest(IRMessages.KONKA_04));
-        _button[4] =   createIRButton("5",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_05));
-        _button[5] =   createIRButton("6",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_06));
-        _button[6] =   createIRButton("7",R.drawable.icon_01,_rows[1], new IRMessageRequest(IRMessages.KONKA_07));
-        _button[7] =   createIRButton("8",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_08));
+        // 81, 82, 83, 84, 85
+        _button[0] =   createIRButton("81",R.drawable.icon_01,_rows[0],new IRMessageRequest(IRMessages.KONKA_08,IRMessages.KONKA_01,IRMessages.KONKA_OK));
+        _button[1] =   createIRButton("82",R.drawable.icon_01,_rows[0],new IRMessageRequest(IRMessages.KONKA_08,IRMessages.KONKA_02,IRMessages.KONKA_OK));
+        _button[2] =   createIRButton("83",R.drawable.icon_01,_rows[0],new IRMessageRequest(IRMessages.KONKA_08,IRMessages.KONKA_03,IRMessages.KONKA_OK));
+        _button[3] =   createIRButton("84",R.drawable.icon_01,_rows[0],new IRMessageRequest(IRMessages.KONKA_08,IRMessages.KONKA_04,IRMessages.KONKA_OK));
+
+        // 31, 32, 33, 76, 77, 78, 98, 99
+        _button[4] =   createIRButton("85",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_08,IRMessages.KONKA_05,IRMessages.KONKA_OK));
+        _button[5] =   createIRButton("31",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_03,IRMessages.KONKA_01,IRMessages.KONKA_OK));
+        _button[6] =   createIRButton("32",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_03,IRMessages.KONKA_02,IRMessages.KONKA_OK));
+        _button[7] =   createIRButton("33",R.drawable.icon_01,_rows[1],new IRMessageRequest(IRMessages.KONKA_03,IRMessages.KONKA_03,IRMessages.KONKA_OK));
+
         _button[8] =   createIRButton("DTV",R.drawable.icon_03,_rows[2],new IRMessageRequest(IRMessages.KONKA_DTV));
-        _button[9] =   createIRButton("9",R.drawable.icon_01,_rows[2], new IRMessageRequest(IRMessages.KONKA_09));
-        _button[10] =  createIRButton("0",R.drawable.icon_01,_rows[2],new IRMessageRequest(IRMessages.KONKA_00));
-        _button[11] =  createIRButton("HTMI",R.drawable.icon_03,_rows[2],new IRMessageRequest(IRMessages.KONKA_HDMI));
+        _button[9] =   createIRButton("99",R.drawable.icon_01,_rows[2],new IRMessageRequest(IRMessages.KONKA_09,IRMessages.KONKA_09,IRMessages.KONKA_OK));
+        _button[10] =  createIRButton("77",R.drawable.icon_01,_rows[2],new IRMessageRequest(IRMessages.KONKA_07,IRMessages.KONKA_07,IRMessages.KONKA_OK));
+        _button[11] =  createIRButton("HDMI",R.drawable.icon_03,_rows[2],new IRMessageRequest(IRMessages.KONKA_HDMI));
 
         _button[12] =  createIRButton("EPS",R.drawable.icon_04,_rows[3], new IRMessageRequest(IRMessages.KONKA_EPS));
         _button[13] =  createIRButton("^",R.drawable.icon_01,_rows[3],new IRMessageRequest(IRMessages.KONKA_UP));
@@ -111,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 */
         _lastBurstTime = System.nanoTime();
 
-        for(int a=0;a<28;a++)
+        for(int a=0;a<32;a++)
         {
             _button[a].setOnTouchListener(this);
         }
