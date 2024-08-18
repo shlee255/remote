@@ -12,7 +12,7 @@ public class IRController extends Thread
 {
     private static int MAX_QUEUED_COUNT = 2;
     private static int MAX_WAIT_PER_PULSE_MS = 40;
-    private static int MAX_WAIT_PER_MESSAGE_MS = 40;
+    private static int MAX_WAIT_PER_MESSAGE_MS = 100;
 
     private ConsumerIrManager _irManager;
 
