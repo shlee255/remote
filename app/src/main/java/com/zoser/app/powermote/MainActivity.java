@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         getRowReferences();
 
-        _buttonPowerAll = (ImageButton) findViewById(R.id.id_Button_ALL);
+        //_buttonPowerAll = (ImageButton) findViewById(R.id.id_Button_ALL);
 
         // 81, 82, 83, 84, 85
         _button[0] =   createIRButton("81",R.drawable.icon_jade,_rows[0],new IRMessageRequest(IRMessages.KONKA_08,IRMessages.KONKA_01,IRMessages.KONKA_OK));
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             _button[a].setOnTouchListener(this);
         }
 
-        _buttonPowerAll.setOnTouchListener(this);
+        //_buttonPowerAll.setOnTouchListener(this);
 
     }
 
@@ -199,11 +199,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             {
                 _lastBurstTime = System.nanoTime();
 
+                /*
                 if(v == _buttonPowerAll)
                 {
                     _waitTime = sendIRMessage(new IRMessageRequest(IRMessages.KONKA_09, IRMessages.KONKA_09, IRMessages.KONKA_OK));
                 }
                 else
+                */
                 {
                     _waitTime = sendIRMessage(((IRMessageRequest) v.getTag()));
                 }

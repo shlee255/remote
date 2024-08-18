@@ -15,30 +15,7 @@
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
         android:orientation="vertical"
-        android:weightSum="9">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
-            <ImageButton
-                android:id="@+id/id_Button_ALL"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/button_selector_red"
-                android:scaleType="fitCenter"
-                android:src="@drawable/icon_09"
-                android:text="POWER ALL"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/remote_text" />
-
-        </LinearLayout>
+        android:weightSum="14">
 
         <LinearLayout
             android:id="@+id/id_Layout_Row_01"
@@ -115,19 +92,55 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_Layout_Row_09"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_Layout_Row_10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_Layout_Row_11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_Layout_Row_12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_Layout_Row_13"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_Layout_Row_14"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:orientation="horizontal"></LinearLayout>
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/id_Button_6"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="128dp"
-        android:layout_weight="1"
-        android:text="NINTENDO SWITCH"/>
 
 
 </RelativeLayout>
