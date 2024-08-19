@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
     private ImageButton _buttonPowerAll;
 
-    private LinearLayout [] _button = new LinearLayout[32];
-    private IRMessageRequest [] _buttonRequest = new IRMessageRequest[32];
+    private LinearLayout [] _button = new LinearLayout[56];
+    //private IRMessageRequest [] _buttonRequest = new IRMessageRequest[32];
 
     private LinearLayout [] _rows = new LinearLayout[8];
 
@@ -113,6 +113,36 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         _button[10] =  createIRButton("SWITCH",R.drawable.icon_07,_rows[3],new IRMessageRequest(IRMessages.KONKA_10));
         _button[11] =  createIRButton("VOLUME DOWN",R.drawable.icon_08,_rows[3],new IRMessageRequest(IRMessages.KONKA_11));
 */
+        _button[32] =  createIRButton("CH+",   R.drawable.icon_red,_rows[8],new IRMessageRequest(IRMessages.PRIMA_CH_UP));
+        _button[33] =  createIRButton("EPG", R.drawable.icon_green,_rows[8],new IRMessageRequest(IRMessages.PRIMA_EPG));
+        _button[34] =  createIRButton("VOL+",R.drawable.icon_yellow,_rows[8],new IRMessageRequest(IRMessages.PRIMA_VOL_UP));
+        // _button[35] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[8],new IRMessageRequest(IRMessages.KONKA_BLUE));
+
+        _button[36] =  createIRButton("CH-",   R.drawable.icon_red,_rows[9],new IRMessageRequest(IRMessages.PRIMA_CH_DOWN));
+        _button[37] =  createIRButton("Record", R.drawable.icon_green,_rows[9],new IRMessageRequest(IRMessages.PRIMA_RECORD));
+        _button[38] =  createIRButton("VOL-",R.drawable.icon_yellow,_rows[9],new IRMessageRequest(IRMessages.PRIMA_VOL_DOWN));
+        // _button[39] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[9],new IRMessageRequest(IRMessages.KONKA_BLUE));
+
+        _button[40] =  createIRButton("1",   R.drawable.icon_red,_rows[10],new IRMessageRequest(IRMessages.PRIMA_1));
+        _button[41] =  createIRButton("2", R.drawable.icon_green,_rows[10],new IRMessageRequest(IRMessages.PRIMA_2));
+        _button[42] =  createIRButton("3",R.drawable.icon_yellow,_rows[10],new IRMessageRequest(IRMessages.PRIMA_3));
+        // _button[43] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[10],new IRMessageRequest(IRMessages.KONKA_BLUE));
+
+        _button[44] =  createIRButton("4",   R.drawable.icon_red,_rows[11],new IRMessageRequest(IRMessages.PRIMA_4));
+        _button[45] =  createIRButton("5", R.drawable.icon_green,_rows[11],new IRMessageRequest(IRMessages.PRIMA_5));
+        _button[46] =  createIRButton("6",R.drawable.icon_yellow,_rows[11],new IRMessageRequest(IRMessages.PRIMA_6));
+        // _button[47] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[11],new IRMessageRequest(IRMessages.KONKA_BLUE));
+
+        _button[48] =  createIRButton("7",   R.drawable.icon_red,_rows[12],new IRMessageRequest(IRMessages.PRIMA_7));
+        _button[49] =  createIRButton("8", R.drawable.icon_green,_rows[12],new IRMessageRequest(IRMessages.PRIMA_8));
+        _button[50] =  createIRButton("9",R.drawable.icon_yellow,_rows[12],new IRMessageRequest(IRMessages.PRIMA_9));
+        // _button[51] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[12],new IRMessageRequest(IRMessages.KONKA_BLUE));
+
+        _button[52] =  createIRButton("TIMER",   R.drawable.icon_red,_rows[13],new IRMessageRequest(IRMessages.PRIMA_PVR_TIMER));
+        _button[53] =  createIRButton("0", R.drawable.icon_green,_rows[13],new IRMessageRequest(IRMessages.PRIMA_0));
+        _button[54] =  createIRButton("PVR",R.drawable.icon_yellow,_rows[13],new IRMessageRequest(IRMessages.PRIMA_PVR));
+        // _button[55] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[13],new IRMessageRequest(IRMessages.KONKA_BLUE));
+        
         _lastBurstTime = System.nanoTime();
 
         for(int a=0;a<32;a++)
@@ -157,8 +187,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         _rows[5] = (LinearLayout)findViewById(R.id.id_Layout_Row_06);
         _rows[6] = (LinearLayout)findViewById(R.id.id_Layout_Row_07);
         _rows[7] = (LinearLayout)findViewById(R.id.id_Layout_Row_08);
+         _rows[8] = (LinearLayout)findViewById(R.id.id_Layout_Row_09);
+        _rows[9] = (LinearLayout)findViewById(R.id.id_Layout_Row_10);
+        _rows[10] = (LinearLayout)findViewById(R.id.id_Layout_Row_11);
+        _rows[11] = (LinearLayout)findViewById(R.id.id_Layout_Row_12);
+        _rows[12] = (LinearLayout)findViewById(R.id.id_Layout_Row_13);
+        _rows[13] = (LinearLayout)findViewById(R.id.id_Layout_Row_14);
     }
-
 
     private LinearLayout createIRButton(String title, int imageResource, LinearLayout row,IRMessageRequest request)
     {
