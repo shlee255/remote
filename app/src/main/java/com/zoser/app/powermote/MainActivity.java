@@ -123,23 +123,23 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         _button[38] =  createIRButton("VOL-",R.drawable.icon_yellow,_rows[9],new IRMessageRequest(IRMessages.PRIMA_VOL_DOWN));
         _button[39] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[9],new IRMessageRequest(IRMessages.KONKA_BLUE));
 
-        _button[40] =  createIRButton("1",   R.drawable.icon_red,_rows[10],new IRMessageRequest(IRMessages.PRIMA_1));
-        _button[41] =  createIRButton("2", R.drawable.icon_green,_rows[10],new IRMessageRequest(IRMessages.PRIMA_2));
-        _button[42] =  createIRButton("3",R.drawable.icon_yellow,_rows[10],new IRMessageRequest(IRMessages.PRIMA_3));
+        _button[40] =  createIRButton("1",   R.drawable.icon_red,_rows[10],new IRMessageRequest(IRMessages.KONKA_01));
+        _button[41] =  createIRButton("2", R.drawable.icon_green,_rows[10],new IRMessageRequest(IRMessages.KONKA_02));
+        _button[42] =  createIRButton("3",R.drawable.icon_yellow,_rows[10],new IRMessageRequest(IRMessages.KONKA_03));
         _button[43] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[10],new IRMessageRequest(IRMessages.KONKA_BLUE));
 
-        _button[44] =  createIRButton("4",   R.drawable.icon_red,_rows[11],new IRMessageRequest(IRMessages.PRIMA_4));
-        _button[45] =  createIRButton("5", R.drawable.icon_green,_rows[11],new IRMessageRequest(IRMessages.PRIMA_5));
-        _button[46] =  createIRButton("6",R.drawable.icon_yellow,_rows[11],new IRMessageRequest(IRMessages.PRIMA_6));
+        _button[44] =  createIRButton("4",   R.drawable.icon_red,_rows[11],new IRMessageRequest(IRMessages.KONKA_04));
+        _button[45] =  createIRButton("5", R.drawable.icon_green,_rows[11],new IRMessageRequest(IRMessages.KONKA_05));
+        _button[46] =  createIRButton("6",R.drawable.icon_yellow,_rows[11],new IRMessageRequest(IRMessages.KONKA_06));
         _button[47] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[11],new IRMessageRequest(IRMessages.KONKA_BLUE));
 
-        _button[48] =  createIRButton("7",   R.drawable.icon_red,_rows[12],new IRMessageRequest(IRMessages.PRIMA_7));
-        _button[49] =  createIRButton("8", R.drawable.icon_green,_rows[12],new IRMessageRequest(IRMessages.PRIMA_8));
-        _button[50] =  createIRButton("9",R.drawable.icon_yellow,_rows[12],new IRMessageRequest(IRMessages.PRIMA_9));
+        _button[48] =  createIRButton("7",   R.drawable.icon_red,_rows[12],new IRMessageRequest(IRMessages.KONKA_07));
+        _button[49] =  createIRButton("8", R.drawable.icon_green,_rows[12],new IRMessageRequest(IRMessages.KONKA_08));
+        _button[50] =  createIRButton("9",R.drawable.icon_yellow,_rows[12],new IRMessageRequest(IRMessages.KONKA_09));
         _button[51] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[12],new IRMessageRequest(IRMessages.KONKA_BLUE));
 
         _button[52] =  createIRButton("TIMER",   R.drawable.icon_red,_rows[13],new IRMessageRequest(IRMessages.PRIMA_PVR_TIMER));
-        _button[53] =  createIRButton("0", R.drawable.icon_green,_rows[13],new IRMessageRequest(IRMessages.PRIMA_0));
+        _button[53] =  createIRButton("0", R.drawable.icon_green,_rows[13],new IRMessageRequest(IRMessages.KONKA_00));
         _button[54] =  createIRButton("PVR",R.drawable.icon_yellow,_rows[13],new IRMessageRequest(IRMessages.PRIMA_PVR));
         _button[55] =  createIRButton("BLUE",  R.drawable.icon_blue,_rows[13],new IRMessageRequest(IRMessages.KONKA_BLUE));
         

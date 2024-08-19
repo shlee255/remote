@@ -140,20 +140,20 @@ public class IRMessages
     public static IRMessage PRIMA_RECORD;
     public static IRMessage PRIMA_VOL_DOWN;
     
-    public static IRMessage PRIMA_1;
-    public static IRMessage PRIMA_2;
-    public static IRMessage PRIMA_3;
+    public static IRMessage PRIMA_01;
+    public static IRMessage PRIMA_02;
+    public static IRMessage PRIMA_03;
 
-    public static IRMessage PRIMA_4;
-    public static IRMessage PRIMA_5;
-    public static IRMessage PRIMA_6;
+    public static IRMessage PRIMA_04;
+    public static IRMessage PRIMA_05;
+    public static IRMessage PRIMA_06;
 
-    public static IRMessage PRIMA_7;
-    public static IRMessage PRIMA_8;
-    public static IRMessage PRIMA_9;
+    public static IRMessage PRIMA_07;
+    public static IRMessage PRIMA_08;
+    public static IRMessage PRIMA_09;
 
     public static IRMessage PRIMA_PVR_TIMER;
-    public static IRMessage PRIMA_0;
+    public static IRMessage PRIMA_00;
     public static IRMessage PRIMA_PVR;
     
 
@@ -292,20 +292,20 @@ public class IRMessages
         PRIMA_RECORD   = IRNecFactory.create(0x48,0,2);
         PRIMA_VOL_DOWN = IRNecFactory.create(0x5A,0,2);
     
-        PRIMA_1 = IRNecFactory.create(0x4A,0,2);
-        PRIMA_2 = IRNecFactory.create(0x0A,0,2);
-        PRIMA_3 = IRNecFactory.create(0x08,0,2);
+        PRIMA_01 = IRNecFactory.create(0x4A,0,2);
+        PRIMA_02 = IRNecFactory.create(0x0A,0,2);
+        PRIMA_03 = IRNecFactory.create(0x08,0,2);
 
-        PRIMA_4 = IRNecFactory.create(0xF6,0,2);
-        PRIMA_5 = IRNecFactory.create(0x2A,0,2);
-        PRIMA_6 = IRNecFactory.create(0x28,0,2);
+        PRIMA_04 = IRNecFactory.create(0xF6,0,2);
+        PRIMA_05 = IRNecFactory.create(0x2A,0,2);
+        PRIMA_06 = IRNecFactory.create(0x28,0,2);
 
-        PRIMA_7 = IRNecFactory.create(0x72,0,2);
-        PRIMA_8 = IRNecFactory.create(0x32,0,2);
-        PRIMA_9 = IRNecFactory.create(0x30,0,2);
+        PRIMA_07 = IRNecFactory.create(0x72,0,2);
+        PRIMA_08 = IRNecFactory.create(0x32,0,2);
+        PRIMA_09 = IRNecFactory.create(0x30,0,2);
 
         PRIMA_PVR_TIMER = IRNecFactory.create(0xB0,0,2);
-        PRIMA_0         = IRNecFactory.create(0xF0,0,2);
+        PRIMA_00         = IRNecFactory.create(0xF0,0,2);
         PRIMA_PVR       = IRNecFactory.create(0xA8,0,2);
     }
 }
