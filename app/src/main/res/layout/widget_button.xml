@@ -22,25 +22,25 @@
         android:layout_height="0dp"
         android:layout_weight="0.05"
         ></LinearLayout>
+
         <ImageView
             android:id="@+id/image_main"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.64"
+            android:layout_weight="0.74"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/icon_02"
-            />
+            android:src="@drawable/icon_02" />
 
         <TextView
             android:id="@+id/text_title"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_alignParentBottom="true"
-            android:layout_weight="0.3"
+            android:layout_weight=".2"
             android:gravity="center_horizontal"
             android:text="VOLUME UP"
             android:textColor="@color/remote_text"
-            android:textSize="10sp" />
+            android:textSize="8sp" />
     </LinearLayout>
 </RelativeLayout>
