@@ -10,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         android:orientation="vertical"
         android:weightSum="14">
 
@@ -24,7 +24,6 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
-
         </LinearLayout>
 
         <LinearLayout
@@ -34,7 +33,6 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
-
         </LinearLayout>
 
         <LinearLayout
@@ -44,8 +42,6 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
-
-
         </LinearLayout>
 
         <LinearLayout
@@ -55,7 +51,6 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
-
         </LinearLayout>
 
         <LinearLayout
@@ -64,7 +59,6 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-
         </LinearLayout>
 
         <LinearLayout
@@ -74,7 +68,6 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
-
         </LinearLayout>
 
         <LinearLayout
@@ -84,7 +77,6 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
-
         </LinearLayout>
 
         <LinearLayout
@@ -93,7 +85,6 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-
         </LinearLayout>
 
         <LinearLayout
@@ -102,7 +93,6 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-
         </LinearLayout>
 
         <LinearLayout
@@ -110,37 +100,39 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/id_Layout_Row_11"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/id_Layout_Row_12"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/id_Layout_Row_13"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/id_Layout_Row_14"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
+            android:orientation="horizontal">
+        </LinearLayout>
     </LinearLayout>
-
-
 </RelativeLayout>
