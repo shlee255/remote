@@ -13,7 +13,7 @@ public class IRNecFactory
     public static final int ZERO_MARK = 562;
     public static final int SPACE     = 562;
 
-    public static final int REPEAT_TIME = 110000;
+    public static final int REPEAT_TIME = 108000;
     public static final int REPEAT_SPACE  = 2250;
 
     public static IRMessage create(int command, int addr, int repeats)
