@@ -97,7 +97,65 @@ public class IRMessages
     public static IRMessage KONKA_10;
     public static IRMessage KONKA_11;
 
+    public static IRMessage PRIMA_POWER;
+    public static IRMessage PRIMA_MUTE;
 
+    public static IRMessage PRIMA_RED;
+    public static IRMessage PRIMA_GREEN;
+    public static IRMessage PRIMA_YELLOW;
+    public static IRMessage PRIMA_BLUE;
+
+    public static IRMessage PRIMA_FB;
+    public static IRMessage PRIMA_FF;
+    public static IRMessage PRIMA_BACKWARD;
+    public static IRMessage PRIMA_FORWARD;
+    
+    public static IRMessage PRIMA_PLAY;
+    public static IRMessage PRIMA_PAUSED;
+    public static IRMessage PRIMA_STOP;
+    public static IRMessage PRIMA_REPEAT;
+
+    public static IRMessage PRIMA_FAV;
+    public static IRMessage PRIMA_INFO;
+    public static IRMessage PRIMA_SUBTITLE;
+    public static IRMessage PRIMA_AUDIO;
+
+    public static IRMessage PRIMA_MENU;
+    public static IRMessage PRIMA_UP;
+    public static IRMessage PRIMA_EXIT;
+    
+    public static IRMessage PRIMA_LEFT;
+    public static IRMessage PRIMA_OK;
+    public static IRMessage PRIMA_RIGHT;
+
+    public static IRMessage PRIMA_GOTO;
+    public static IRMessage PRIMA_DOWN;
+    public static IRMessage PRIMA_RECALL;
+
+    public static IRMessage PRIMA_CH_UP;
+    public static IRMessage PRIMA_EPG;
+    public static IRMessage PRIMA_VOL_UP;
+    
+    public static IRMessage PRIMA_CH_DOWN;
+    public static IRMessage PRIMA_RECORD;
+    public static IRMessage PRIMA_VOL_DOWN;
+    
+    public static IRMessage PRIMA_1;
+    public static IRMessage PRIMA_2;
+    public static IRMessage PRIMA_3;
+
+    public static IRMessage PRIMA_4;
+    public static IRMessage PRIMA_5;
+    public static IRMessage PRIMA_6;
+
+    public static IRMessage PRIMA_7;
+    public static IRMessage PRIMA_8;
+    public static IRMessage PRIMA_9;
+
+    public static IRMessage PRIMA_PVR_TIMER;
+    public static IRMessage PRIMA_0;
+    public static IRMessage PRIMA_PVR;
+    
 
     public static void initialize()
     {
@@ -191,5 +249,63 @@ public class IRMessages
 
         // KONKA_HOME = IRKonkaFactory.create(0x0213,0);
 
+        PRIMA_POWER = IRNecFactory.create(0x9A,0,2);
+        PRIMA_MUTE  = IRNecFactory.create(0x98,0,2);
+        
+        PRIMA_RED    = IRNecFactory.create(0x42,0,2);
+        PRIMA_GREEN  = IRNecFactory.create(0x02,0,2);
+        PRIMA_YELLOW = IRNecFactory.create(0x00,0,2);
+        PRIMA_BLUE   = IRNecFactory.create(0xC0,0,2);
+
+        PRIMA_FB       = IRNecFactory.create(0x52,0,2);
+        PRIMA_FF       = IRNecFactory.create(0x12,0,2);
+        PRIMA_BACKWARD = IRNecFactory.create(0x10,0,2);
+        PRIMA_FORWARD  = IRNecFactory.create(0xD0,0,2);
+    
+        PRIMA_PLAY   = IRNecFactory.create(0x62,0,2);
+        PRIMA_PAUSED = IRNecFactory.create(0x22,0,2);
+        PRIMA_STOP   = IRNecFactory.create(0x20,0,2);
+        PRIMA_REPEAT = IRNecFactory.create(0xE0,0,2);
+
+        PRIMA_FAV      = IRNecFactory.create(0xAA,0,2);
+        PRIMA_INFO     = IRNecFactory.create(0x70,0,2);
+        PRIMA_SUBTITLE = IRNecFactory.create(0x88,0,2);
+        PRIMA_AUDIO    = IRNecFactory.create(0x8A,0,2);
+
+        PRIMA_MENU = IRNecFactory.create(0xA2,0,2);
+        PRIMA_UP   = IRNecFactory.create(0x60,0,2);
+        PRIMA_EXIT = IRNecFactory.create(0xA0,0,2);
+    
+        PRIMA_LEFT  = IRNecFactory.create(0x5A,0,2);
+        PRIMA_OK    = IRNecFactory.create(0x58,0,2);
+        PRIMA_RIGHT = IRNecFactory.create(0xD8,0,2);
+
+        PRIMA_GOTO   = IRNecFactory.create(0xE8,0,2);
+        PRIMA_DOWN   = IRNecFactory.create(0x68,0,2);
+        PRIMA_RECALL = IRNecFactory.create(0xC8,0,2);
+
+        PRIMA_CH_UP  = IRNecFactory.create(0x60,0,2);
+        PRIMA_EPG    = IRNecFactory.create(0xB2,0,2);
+        PRIMA_VOL_UP = IRNecFactory.create(0xD8,0,2);
+    
+        PRIMA_CH_DOWN  = IRNecFactory.create(0x68,0,2);
+        PRIMA_RECORD   = IRNecFactory.create(0x48,0,2);
+        PRIMA_VOL_DOWN = IRNecFactory.create(0x5A,0,2);
+    
+        PRIMA_1 = IRNecFactory.create(0x4A,0,2);
+        PRIMA_2 = IRNecFactory.create(0x0A,0,2);
+        PRIMA_3 = IRNecFactory.create(0x08,0,2);
+
+        PRIMA_4 = IRNecFactory.create(0xF6,0,2);
+        PRIMA_5 = IRNecFactory.create(0x2A,0,2);
+        PRIMA_6 = IRNecFactory.create(0x28,0,2);
+
+        PRIMA_7 = IRNecFactory.create(0x72,0,2);
+        PRIMA_8 = IRNecFactory.create(0x32,0,2);
+        PRIMA_9 = IRNecFactory.create(0x30,0,2);
+
+        PRIMA_PVR_TIMER = IRNecFactory.create(0xB0,0,2);
+        PRIMA_0         = IRNecFactory.create(0xF0,0,2);
+        PRIMA_PVR       = IRNecFactory.create(0xA8,0,2);
     }
 }
