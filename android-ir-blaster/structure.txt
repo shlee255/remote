@@ -1,0 +1,17 @@
+main.dart
+- RemoteList()
+
+remote.dart
+- readRemotes
+- writeDefaultRemotes
+- writeRemotelist
+
+remote_list.dart
+- RemoteList
+  - _RemoteListState
+    - buildResults
+
+
+ir.dart
+- transmitRaw(freq, pattern)
+- sendIR(button)
