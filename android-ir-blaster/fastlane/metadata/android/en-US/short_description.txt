@@ -1,0 +1,1 @@
+IR blaster that supports hex code, raw signal and Flipper Zero .IR files
